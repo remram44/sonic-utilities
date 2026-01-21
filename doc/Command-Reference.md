@@ -12506,7 +12506,9 @@ This command is to add or delete a member port into multiple already created vla
   config vlan member add/del [-m] [-e] <vlan_id> <member_portname>
   ```
 *NOTE: -m flag multiple Vlans in range or comma separted list can be added as a member port.*
+
 *NOTE: -e is used as an except flag as explained with examples below.*
+
 - Example:
   ```
   admin@sonic:~$ sudo config vlan member add -m 100-103 Ethernet0
@@ -12526,8 +12528,7 @@ This command is to add or delete a member port into multiple already created vla
   ```
    ```
   admin@sonic:~$ sudo config vlan member add all Ethernet20
-  Suppose vlan 100, vlan 101, vlan 102, vlan 103, vlan 104, vlan 105 are exisiting vlans. This command will add Ethernet20 as member of vlan 100, vlan 101, vlan 102, vlan 103, vlan 104, vlan 1
-05
+  Suppose vlan 100, vlan 101, vlan 102, vlan 103, vlan 104, vlan 105 are exisiting vlans. This command will add Ethernet20 as member of vlan 100, vlan 101, vlan 102, vlan 103, vlan 104, vlan 105
   ```
 
 **config proxy_arp enabled/disabled**
